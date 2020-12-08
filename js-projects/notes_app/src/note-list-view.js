@@ -7,7 +7,7 @@ class NoteView {
     noteListHTML() {
         let returnString = ""
         this.noteList.notes.forEach((element) => {
-            returnString = returnString + (element.text) + " ";
+            returnString = returnString + "<li><div>" + (element.text) + "</div></li>";
         })
         return "<ul>" + returnString + "</ul>"
     }
