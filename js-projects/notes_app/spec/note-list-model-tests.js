@@ -1,3 +1,14 @@
+'use strict'
+
+function testNoteListStartsWithNoNotes() {
+    let noteList = new NoteList();
+    let assert = new Assert();
+    console.log('NoteList starts with no notes in it');
+    assert.isTrue(noteList.getNotes().length === 0);
+}
+
+testNoteListStartsWithNoNotes();
+
 function testCanAddAndStoreNewNotes() {
     let noteList = new NoteList();
     let assert = new Assert();
