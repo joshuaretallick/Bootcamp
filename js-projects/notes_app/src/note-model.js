@@ -1,15 +1,14 @@
-(function(exports) {
-  class Note {
+class Note {
 
-      constructor(text) {
-          this.text = text;
-      }
+    constructor(text) {
+        this.text = text;
+    };
 
-      inputText() {
-          return this.text
-      }
+    getText() {
+        return this.text
+    };
 
-  }
+}
 
-    exports.Note = Note;
-})(this);
+
+
